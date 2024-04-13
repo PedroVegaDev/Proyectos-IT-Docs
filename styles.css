@@ -1,0 +1,24 @@
+.home {
+  text-align: center;
+}
+
+.home__title {
+  line-height: 1;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-block: 3rem;
+  letter-spacing: -0.025em;
+}
+
+.home__description {
+  line-height: 1.5;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.home__button {
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+}
