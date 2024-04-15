@@ -1,9 +1,10 @@
 {
   "index": "Introducción",
+  "extensiones": "VS Code: Extensiones",
+  "configuraciones": "Configuraciones",
   "--": {
     "type": "separator",
-    "title": "Proyecto Orimi"
+    "title": "Proyectos"
   },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)"
+  "orimi": "Orimi"
 }

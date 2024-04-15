@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export const HomePage = () => {
   return (
-    // TODO: Cambiar css por tailwind
+    // TODO: Cambiar css por tailwind y agregar media queries
     <main className="home">
       <h1 className="home__title">Documentación de Proyectos IT</h1>
       <p className="home__description">
@@ -16,5 +16,5 @@ export const HomePage = () => {
         Empezar
       </Link>
     </main>
-  );
-};
+  )
+}

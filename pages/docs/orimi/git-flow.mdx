@@ -1,0 +1,43 @@
+# Git Flow
+
+## Ramas Principales
+
+El desarrollo empieza desde la rama `develop`, ya que la rama `main` está protegida debido a que contiene los últimos cambios de la aplicación en fase de producción.
+
+```mermaid
+---
+title: Inicio desde la rama develop
+---
+
+gitGraph
+   commit id: "initial commit" type: REVERSE
+   branch develop
+   commit id: "update README.md" type: HIGHLIGHT
+```
+
+## Ramas de Desarrollo
+
+Desde la rama `develop` se crearán ramas de acuerdo con las funcionalidades que se estén desarrollando. Una vez terminadas todas las funcionalidades de la rama respectiva, se puede realizar un merge apuntando a la rama **develop**.
+
+```mermaid
+---
+title: Creación de ramas desde rama develop
+config:
+  gitGraph:
+    mainBranchName: "develop"
+    parallelCommits: true
+---
+gitGraph
+   commit id: "update README.md"
+   branch feature/login
+   commit id: "feat: create login page"
+   commit id: "style: implement ui"
+   checkout develop
+   branch feature/register
+   commit id: "feat: create register page"
+   commit id: "feat: implement functionalities"
+   commit id: "style: implement ui from figma"
+   checkout develop
+   merge feature/login id: "MERGE: from feature/login"
+
+```
