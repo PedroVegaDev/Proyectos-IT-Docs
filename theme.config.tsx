@@ -19,7 +19,7 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/PedroVegaDamian/Proyectos-IT-Docs'
   },
   chat: {
-    link: 'https://discord.gg/Rw684wXd'
+    link: 'https://discord.gg/jDtHaETYpx'
   },
   sidebar: {
     defaultMenuCollapseLevel: 2
