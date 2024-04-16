@@ -8,6 +8,7 @@ import { FileTree } from 'nextra/components'
     <FileTree.Folder name="components" />
     <FileTree.Folder name="firebase" />
     <FileTree.Folder name="hooks" />
+    <FileTree.Folder name="models" />
     <FileTree.Folder name="layouts" />
     <FileTree.Folder name="pages" />
     <FileTree.Folder name="router" />
@@ -30,7 +31,7 @@ Es el directorio donde se guandan los recursos.
 
 ### components
 
-Es el directorio donde se crean los componentes.
+Es el directorio donde se crean los componentes reutilizables que se utilizan en diferentes partes de la aplicación.
 
 ### firebase
 
@@ -40,13 +41,17 @@ Es el directorio de configuración de Firebase.
 
 Es el directorio donde se crean los hooks.
 
+### models
+
+Es el directorio donde se crean los modelos de datos, como los types e interfaces.
+
 ### layouts
 
 Es el directorio donde se crean los layouts.
 
 ### pages
 
-Es el directorio donde se crean las páginas.
+Es el directorio donde se crean las páginas que se relaciona con las rutas de la aplicación.
 
 ### router
 
@@ -63,3 +68,25 @@ Es el directorio donde se maneja los estados globales.
 ### utils
 
 Es el directorio donde se crean los métodos y funciones auxiliares.
+
+## Convención de Nombres
+
+{/* TODO: Mejorar ejemplos de nombres, hacerlo a través de código */}
+
+### PascalCase
+
+Ejemplo: `InputForm`, `BaseButton`, `UserResponse`
+
+Se utilizará esta forma de nombrar a los componentes, interfaces y tipos.
+
+### CamelCase
+
+Ejemplo: `handleClick`, `firstName`, `errorMessage`
+
+Se utilizará esta forma de nombrar a las funciones y variables.
+
+### SnakeUpperCase
+
+Ejemplo: `PI`, `API_URL`, `MAX_AGE`
+
+Se utilizará esta forma de nombrar a las constantes.
